@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>High Miles Patio</title>
+
+    <!-- Link to your external CSS file -->
+    <link rel="stylesheet" href="dist/style.css">
+
+    <!-- Link to Font Awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Referencias a jQuery y Slick Carousel -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400&display=swap" rel="stylesheet">
+  </head>
+
+  <!-- Rest of your HTML content -->
+  <!-- ... -->
+</html>
+  <body>
+    <header class="header">
+      <div class="overlay has-fade"></div>
+
+      <nav class="container container--pall flex flex-jc-sb flex-ai-c">
+        <a href="/" class="header__logo">
+          <img src=  alt="High Miles Patio" />
+        </a>
+
+        <a id="btnHamburger" href="#" class="header__toggle hide-for-desktop">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+
+        <div class="header__links hide-for-mobile">
+          <a href="feature">Service</a><a href="Gallery">Gallery</a><a href="#">Reviews</a
+          ><a href="contact">Contact Us</a>
+        </div>
+
+        <a href="#" class="button header__cta hide-for-mobile"
+          >Request Estimate</a
+        >
+      </nav>
+
+      <div class="header__menu has-fade">
+        <li><a href="feature">Service</a></li>
+        <li><a href="Gallery">Gallery</a></li>
+        <li><a href="Reviews">Reviews</a></li>
+        <li><a href="Contact">Contact Us</a></li>
+        
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="container">
+        <div class="hero__image"></div>
+
+        <div class="hero__text container--pall">
+          <h1>Colorado's Leaders in Renovations</h1>
+          <p>
+            Change the way you live under a luxury Renovation.
+          </p>
+          <a href="#" class="button hero__cta">Request Estimate</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="feature">
+    <section id="feature">
+      <div class="feature__content container container--pall">
+        <div class="feature__intro">
+        
+          <h2>Why Choose Us?</h2>
+          <p>
+            With our experience and construction processes, we ensure the quality of our projects.
+          </p>
+        </div>
+
+        <div class="feature__grid">
+          <div class="feature__item">
+            <div class="feature__icon">
+              <img src="images/icon-online.svg" />
+            </div>
+            <div class="feature__title">It's all about the materials</div>
+            <div class="feature__description">
+              A combination of excellent engineering and structural components built from 100% extruded aluminum, the same used in producing airplane wings and fuselages. Its high strength-to-weight ratio enables it to withstand heavy snow loads, driving rainstorms, and high winds.
+            </div>
+          </div>
+
+          <div class="feature__item">
+            <div class="feature__icon">
+              <img src="images/icon-budgeting.svg" />
+            </div>
+            <div class="feature__title">Designed for any weather</div>
+            <div class="feature__description">
+              A combination of excellent engineering, beautiful aesthetics, and structural integrity resist up to 175-mph hurricane winds—strong enough for any location and any home style.
+            </div>
+          </div>
+
+          <div class="feature__item">
+            <div class="feature__icon">
+              <img src="images/icon-onboarding.svg" />
+            </div>
+            <div class="feature__title">Does not required maintenance</div>
+            <div class="feature__description">
+              Baked-on powder coat finishes on all of our extruded aluminum profiles are the very best in durable and maintenance-free coatings that require no more maintenance than a wash now and then.
+            </div>
+          </div>
+
+          <div class="feature__item">
+            <div class="feature__icon"><img src="images/icon-api.svg" /></div>
+            <div class="feature__title">Most Competitive Prices on The Market</div>
+            <div class="feature__description">
+              Affordable on almost any budget and manufactured out of the best materials.
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="form-section">
+        <div class="container container--pall">
+          <h2>Request A FREE Estimate Today!</h2>
+          <p>Schedule a free visit with one of our designers and get a free estimate</p>
+  
+          <form class="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+  
+            <label for="phone">Phone:</label>
+            <input type="phone" id="phone" name="phone" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="Address">Address:</label>
+            <input type="Address" id="Address" name="Address" required>
+  
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+  
+            <button type="submit" class="button">Request Estimate</button>
+          </form>
+        </div>
+      </section>
+    </section>
+
+  
+  </head>
+ 
+  <h2>Gallery</h2>
+  
+
+    <div class="gallery-container">
+        <div class="dropdown-container">
+          <label for="galleryDropdown"></label>
+          <select id="galleryDropdown" class="form-select">
+            <option value="all">Select an option</option>
+            <option value="indoor">Indoor</option>
+            <option value="outdoor">Outdoor</option>
+          </select>
+          <div class="form-select-arrow">&#9662;</div>
+        </div>
+      
+        <div class="gallery-carousel" id="categoryCarousel">
+          <!-- Carrusel de imágenes -->
+          <!-- Se mostrará cuando no se seleccione ninguna categoría -->
+          <img src="images/ai-generado-entrada-estilo-moderno.jpg" alt="Random Image 1" />
+          <img src="images/diseno-interior-moderno-cocina.jpg" alt="Random Image 2" />
+          <img src="images/bano-pequeno-estilo-moderno-generado-ai (2).jpg" alt="Random Image 3" />
+          <!-- Agrega más imágenes aleatorias aquí -->
+        </div>
+      
+        <div class="gallery-category" id="indoorCategory">
+          <div class="category-images">
+            <img src="images/pequeno-espacio-bano-diseno-interior-estilo-moderno.jpg" alt="Indoor 1" />
+            <img src="images/apartamento-moderno-elegante-lujosos-pisos-madera-bano-marmol-generado-inteligencia-artificial.jpg" alt="Indoor 2" />
+            <img src="images/cocina-domestica-moderna-electrodomesticos-lujo-decoracion-elegante-dentro-loft-generado-ia.jpg" alt="Indoor 3" />
+            <img src="images/diseno-interior-moderno-cocina (1).jpg" alt="Indoor 4" />
+            <img src="images/toma-composicion-panoramica-bano (1).jpg" alt="Indoor 5" />
+            <img src="images/cajas-empaquetadas-mudarse-nueva-casa.jpg" alt="Indoor 6" />
+            
+            <!-- Imágenes para la categoría indoor -->
+            <!-- Agrega tus imágenes aquí -->
+      </div>
+    </div>
+  
+    <div class="gallery-category" id="outdoorCategory">
+      <div class="category-images">
+        <img src="images/cabana-troncos-rustica-ubicada-bosque-tranquilo-generada-ia.jpg" alt="Outdoor 1" />
+        <img src="images/ai-generado-entrada-estilo-moderno.jpg" alt="Outdoor 2" />
+        <img src="images/cabina-minimalista-que-integra-entorno.jpg" alt="Outdoor 3" />
+        <img src="images/disparo-vertical-edificio-alto-hermosos-arboles-otonales-fondo-colorado.jpg" alt="Outdoor 4" />
+        <img src="images/patio-rural-mobiliario-vegetacion (1).jpg" alt="Outdoor 5" />
+        <img src="images/patio-rural-mobiliario-vegetacion.jpg" alt="Outdoor 6" />
+        <!-- Imágenes para la categoría outdoor -->
+        <!-- Agrega tus imágenes aquí -->
+        </div>
+      </div>
+    </div>
+  
+    <script>
+      $(document).ready(function(){
+        // Configuración del carrusel con Slick Carousel
+        $('.gallery-carousel').slick({
+          dots: true,
+          autoplay: true,
+          autoplaySpeed: 2000
+        });
+      });
+
+      
+  
+        // Event listener para el cambio en el menú desplegable
+        $('#galleryDropdown').change(function() {
+          var selectedCategory = $(this).val();
+          $('.gallery-carousel').hide();
+          $('.gallery-category').hide();
+  
+          if (selectedCategory === 'all') {
+            $('.gallery-carousel').show();
+          } else {
+            $('#' + selectedCategory + 'Category').show();
+          }
+
+          $(document).ready(function(){
+  // ... Otro código ...
+
+            $('#galleryDropdown').change(function() {
+              var selectedCategory = $(this).val();
+              $('.gallery-carousel').removeClass('visible');
+              $('.gallery-category').removeClass('visible');
+
+              if (selectedCategory === 'all') {
+                $('.gallery-carousel').addClass('visible');
+              } else {
+                $('#' + selectedCategory + 'Category').addClass('visible');
+              }
+            });  
+        });
+      });
+    </script>
+  
+
+    <section class="articles">
+      <div class="article__content container container--pall">
+        <h2>How Can I Get My Renovation?</h2>
+
+        <div class="article__grid">
+          <a href="#" class="article__item">
+            <div
+              class="article__image"
+              style="background-image: url('images/image-currency.jpg')"
+            ></div>
+            <div class="article__text">
+              <div class="article__author">By Veronica Mayor</div>
+              <div class="article__title">
+                Property Visit
+              </div>
+              <div class="article__description">
+                Contact us and schedule a visit to your property with one of our exterior designers or online assistants.
+              </div>
+            </div>
+          </a>
+
+          <a href="#" class="article__item">
+            <div
+              class="article__image"
+              style="background-image: url('images/image-restaurant.jpg')"
+            ></div>
+            <div class="article__text">
+              <div class="article__author">By George</div>
+              <div class="article__title">
+                Design And Estimate
+              </div>
+              <div class="article__description">
+                Receive a custom design of your shade structure and get a detailed estimate of your project.
+              </div>
+            </div>
+          </a>
+
+          <a href="#" class="article__item">
+            <div
+              class="article__image"
+              style="background-image: url('images/image-plane.jpg')"
+            ></div>
+            <div class="article__text">
+              <div class="article__author">By George</div>
+              <div class="article__title">
+                Construction
+              </div>
+              <div class="article__description">
+                Your dream outdoor space can be enjoyed with friends and family after your project is completed.
+              </div>
+            </div>
+          </a>
+
+          <a href="#" class="article__item">
+            <div
+              class="article__image"
+              style="background-image: url('images/image-confetti.jpg')"
+            ></div>
+            <div class="article__text">
+              <div class="article__author">By Veronica Mayor</div>
+              <div class="article__title">
+                Our invite-only Beta accounts are now live!
+              </div>
+              <div class="article__description">
+                After a lot of hard work by the whole team, we’re excited to
+                launch our closed beta. It’s easy to request an invite through
+                the site …
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+   
+
+   
+    
+      <section id="contact" class="Contact">
+        <div class="container">
+          <h2>Talk To Us!</h2>
+          <div class="contact-content">
+            <div class="text-content">
+              <p>Contact one of our designers or send us your information via the contact form, and one of our representatives will contact you as soon as possible.</p>
+      
+              <div>
+                <p><i class="icon fas fa-phone"></i>Phone: (720) 999-4521</p>
+                <p><i class="icon fas fa-envelope"></i>Email: pergolaplus@gmail.com</p>
+                <p><i class="icon fas fa-envelope"></i>Hours: Mon. - Fri. 9:00 AM - 5:00 PM</p>
+                <p><i class="icon fas fa-map-marker-alt"></i>Address: 1001 Bannock St #497, Denver, CO 80204</p>
+              </div>
+      
+              <button id="contactFormButton">Contact Us by Form</button>
+            </div>
+            <div class="image-content">
+              <img src="images/bano-pequeno-estilo-moderno-generado-ai (4).jpg" alt="Contact Image">
+            </div>
+          </div>
+        </div>
+
+        
+      </section>
+    
+
+
+      
+        <!-- Your existing footer, etc. -->
+      
+        <script>
+          // Add JavaScript for handling the button click event and navigating to the contact form
+          document.getElementById('contactFormButton').addEventListener('click', function() {
+            // You can navigate to the contact form page or show a form modal here
+            // Example: window.location.href = 'contact-form.html';
+            alert('Navigate to the contact form ');
+          });
+        </script>
+    <footer class="footer">
+      <div class="container">
+        <a class="footer__logo" href="#">
+         
+        </a>
+
+        <div class="footer__social">
+          <a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+              <title>Facebook</title>
+              <path
+                fill="#FFF"
+                d="M18.896 0H1.104C.494 0 0 .494 0 1.104v17.793C0 19.506.494 20 1.104 20h9.58v-7.745H8.076V9.237h2.606V7.01c0-2.583 1.578-3.99 3.883-3.99 1.104 0 2.052.082 2.329.119v2.7h-1.598c-1.254 0-1.496.597-1.496 1.47v1.928h2.989l-.39 3.018h-2.6V20h5.098c.608 0 1.102-.494 1.102-1.104V1.104C20 .494 19.506 0 18.896 0z"
+              />
+            </svg>
+          </a>
+          <a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20">
+              <title>YouTube</title>
+              <path
+                fill="#FFF"
+                d="M10.333 0c-5.522 0-10 4.478-10 10 0 5.523 4.478 10 10 10 5.523 0 10-4.477 10-10 0-5.522-4.477-10-10-10zm3.701 14.077c-1.752.12-5.653.12-7.402 0C4.735 13.947 4.514 13.018 4.5 10c.014-3.024.237-3.947 2.132-4.077 1.749-.12 5.651-.12 7.402 0 1.898.13 2.118 1.059 2.133 4.077-.015 3.024-.238 3.947-2.133 4.077zM8.667 8.048l4.097 1.949-4.097 1.955V8.048z"
+              />
+            </svg>
+          </a>
+          <a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="18">
+              <title>Twitter</title>
+              <path
+                fill="#FFF"
+                d="M20.667 2.797a8.192 8.192 0 01-2.357.646 4.11 4.11 0 001.804-2.27 8.22 8.22 0 01-2.606.996A4.096 4.096 0 0014.513.873c-2.649 0-4.595 2.472-3.997 5.038a11.648 11.648 0 01-8.457-4.287 4.109 4.109 0 001.27 5.478A4.086 4.086 0 011.47 6.59c-.045 1.901 1.317 3.68 3.29 4.075a4.113 4.113 0 01-1.853.07 4.106 4.106 0 003.834 2.85 8.25 8.25 0 01-6.075 1.7 11.616 11.616 0 006.29 1.843c7.618 0 11.922-6.434 11.662-12.205a8.354 8.354 0 002.048-2.124z"
+              />
+            </svg>
+          </a>
+          <a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+              <title>Pinterest</title>
+              <path
+                fill="#FFF"
+                d="M10 0C4.478 0 0 4.477 0 10c0 4.237 2.636 7.855 6.356 9.312-.088-.791-.167-2.005.035-2.868.182-.78 1.172-4.97 1.172-4.97s-.299-.6-.299-1.486c0-1.39.806-2.428 1.81-2.428.852 0 1.264.64 1.264 1.408 0 .858-.545 2.14-.828 3.33-.236.995.5 1.807 1.48 1.807 1.778 0 3.144-1.874 3.144-4.58 0-2.393-1.72-4.068-4.177-4.068-2.845 0-4.515 2.135-4.515 4.34 0 .859.331 1.781.745 2.281a.3.3 0 01.069.288l-.278 1.133c-.044.183-.145.223-.335.134-1.249-.581-2.03-2.407-2.03-3.874 0-3.154 2.292-6.052 6.608-6.052 3.469 0 6.165 2.473 6.165 5.776 0 3.447-2.173 6.22-5.19 6.22-1.013 0-1.965-.525-2.291-1.148l-.623 2.378c-.226.869-.835 1.958-1.244 2.621.937.29 1.931.446 2.962.446 5.522 0 10-4.477 10-10S15.522 0 10 0z"
+              />
+            </svg>
+          </a>
+          <a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20">
+              <title>Instagram</title>
+              <path
+                fill="#FFF"
+                d="M10.333 1.802c2.67 0 2.987.01 4.042.059 2.71.123 3.976 1.409 4.1 4.099.048 1.054.057 1.37.057 4.04 0 2.672-.01 2.988-.058 4.042-.124 2.687-1.386 3.975-4.099 4.099-1.055.048-1.37.058-4.042.058-2.67 0-2.986-.01-4.04-.058-2.717-.124-3.976-1.416-4.1-4.1-.048-1.054-.058-1.37-.058-4.041 0-2.67.01-2.986.058-4.04.124-2.69 1.387-3.977 4.1-4.1 1.054-.048 1.37-.058 4.04-.058zm0-1.802C7.618 0 7.278.012 6.211.06 2.579.227.56 2.242.394 5.877.345 6.944.334 7.284.334 10s.011 3.057.06 4.123c.166 3.632 2.181 5.65 5.816 5.817 1.068.048 1.408.06 4.123.06 2.716 0 3.057-.012 4.124-.06 3.628-.167 5.651-2.182 5.816-5.817.049-1.066.06-1.407.06-4.123s-.011-3.056-.06-4.122C20.11 2.249 18.093.228 14.458.06 13.39.01 13.049 0 10.333 0zm0 4.865a5.135 5.135 0 100 10.27 5.135 5.135 0 000-10.27zm0 8.468a3.333 3.333 0 110-6.666 3.333 3.333 0 010 6.666zm5.339-9.87a1.2 1.2 0 10-.001 2.4 1.2 1.2 0 000-2.4z"
+              />
+            </svg>
+          </a>
+        </div>
+
+        <div class="footer__links col1">
+          <a href="#">Service</a>
+          <a href="#">Gallery</a>
+          
+        </div>
+
+        <div class="footer__links col2">
+          <a href="#">Reviews</a>
+          <a href="#">Contact Us</a>
+          
+        </div>
+
+        <div class="footer__cta">
+          <a href="#" class="button">Contatc Us by contact Form</a>
+        </div>
+
+        <div class="footer__copyright">
+          &copy; Miles High Patio. All Rights Reserved.
+        </div>
+      </div>
+     
+    </footer>
+
+    <script src="app/js/script.js"></script>
+  </body>
+</html>
